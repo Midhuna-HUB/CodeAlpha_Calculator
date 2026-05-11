@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Advanced Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="pink">
+
+<div class="calculator">
+    <div class="top">
+        <span class="mode" onclick="toggleScientific()">🧮</span>
+        <span class="mode" onclick="toggleTheme()">🎨</span>
+    </div>
+
+    <input type="text" id="display" readonly>
+
+    <!-- Scientific -->
+    <div class="buttons scientific">
+        <button onclick="func('sin')">sin</button>
+        <button onclick="func('cos')">cos</button>
+        <button onclick="func('tan')">tan</button>
+        <button onclick="func('log')">log</button>
+        <button onclick="func('sqrt')">√</button>
+        <button onclick="func('square')">x²</button>
+    </div>
+
+    <!-- Normal -->
+    <div class="buttons">
+        <button class="clear" onclick="clearDisplay()">C</button>
+        <button onclick="del()">⌫</button>
+        <button onclick="add('%')">%</button>
+        <button class="op" onclick="add('/')">÷</button>
+
+        <button onclick="add('7')">7</button>
+        <button onclick="add('8')">8</button>
+        <button onclick="add('9')">9</button>
+        <button class="op" onclick="add('*')">×</button>
+
+        <button onclick="add('4')">4</button>
+        <button onclick="add('5')">5</button>
+        <button onclick="add('6')">6</button>
+        <button class="op" onclick="add('-')">−</button>
+
+        <button onclick="add('1')">1</button>
+        <button onclick="add('2')">2</button>
+        <button onclick="add('3')">3</button>
+        <button class="op" onclick="add('+')">+</button>
+
+        <button class="zero" onclick="add('0')">0</button>
+        <button onclick="add('.')">.</button>
+        <button class="equal" onclick="calc()">=</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
